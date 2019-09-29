@@ -1,0 +1,4 @@
+baseURL = "http://gaurava.github.io/"
+languageCode = "en-us"
+title = "Gaurav Arora"
+theme = "beautifulhugo"
