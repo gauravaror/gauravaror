@@ -1,4 +1,4 @@
-baseURL = "./"
+baseURL = "https://gauravaror.github.io/"
 languageCode = "en-us"
 title = "Gaurav Arora"
 theme = "beautifulhugo"
