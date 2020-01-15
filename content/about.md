@@ -23,7 +23,7 @@ Before joining Masters, I was a co-founder of a Mobile application startup focus
 
 #### Publication
 
-* **Gaurav Arora**, [Afshin Rahimi](http://afshinrahimi.github.io/), [Timothy Baldwin](https://people.eng.unimelb.edu.au/tbaldwin/): Does an LSTM forget more than a CNN? An empirical study of catastrophic forgetting in NLP, [ALTA 2019](https://alta2019.alta.asn.au/papers    )  [Slides](/alta_presentation_2019.pdf)  [Code](https://github.com/gauravaror/catastrophic_forgetting) 
+* **Gaurav Arora**, [Afshin Rahimi](http://afshinrahimi.github.io/), [Timothy Baldwin](https://people.eng.unimelb.edu.au/tbaldwin/): Does an LSTM forget more than a CNN? An empirical study of catastrophic forgetting in NLP, [ALTA 2019](https://www.aclweb.org/anthology/U19-1011/)  [Slides](/alta_presentation_2019.pdf)  [Code](https://github.com/gauravaror/catastrophic_forgetting)
 * Parth Mehta, **Gaurav Arora**, [Prasenjit Majumder](https://www.daiict.ac.in/profile/prasenjit-majumder/): [Attention based Sentence Extraction from Scientific Articles using Pseudo-Labeled data](https://arxiv.org/abs/1802.04675)
 * [Khushboo Singhal](http://www.pitt.edu/~kmt81/), **Gaurav Arora**, Smita Kumari: [SMS Normalization for FAQ Retrieval](https://link.springer.com/chapter/10.1007/978-3-642-40087-2_16), FIRE 2011
 
