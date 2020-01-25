@@ -61,3 +61,17 @@ Maintaining list Inspired from list maintained by [sadihassan](https://sadihassa
 | Title | Link | Code  | Notes |
 | ----- | ---- | ---- |  ----- |
 | Find the Median of a Number Stream (hard)| [Leet](https://leetcode.com/problems/find-median-from-data-stream/) | [github](https://github.com/gauravaror/programming/blob/master/find_median_sort_two_heap.cpp) | Maintain a min and max heap and take top elements based on sizes of heap and keep them balanced. |
+| Sliding Window Median (hard) [Not Finished]| [Leet](https://leetcode.com/problems/sliding-window-median/) | [github](https://github.com/gauravaror/programming/blob/master/sliding-window-median-failed.cpp) | Maintain a min and max heap and take top elements based on sizes of heap and keep them balanced. |
+| Mazimize Capital (hard)| [Leet](https://leetcode.com/problems/ipo/) | [github](https://github.com/gauravaror/programming/blob/master/ipo.cpp) | Maintain max heap for profit and min heap for capital not matching and add all capital. |
+
+
+# Non-Educative pattern Questions
+
+## Patter: Dynamic Programming
+Dynamic programming is all about saving the computation by saving the old computation. This is enabled by maintaining a table to save the previous computation and generally results in a faster algoritm.
+
+| Title | Link | Code  | Notes |
+| ----- | ---- | ---- |  ----- |
+| | Minumum Path Sum [Leet](https://leetcode.com/problems/minimum-path-sum/) | [github](https://github.com/gauravaror/programming/blob/master/minimum-path-sum-dp.cpp) | Sum first row and column incrementally and then take minimum from left and right path incrementally. Maintain in same table. It is also possible to do this problem using DFS and shortest path algorithm |
+
+
