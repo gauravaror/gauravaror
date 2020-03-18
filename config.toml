@@ -3,13 +3,11 @@ languageCode = "en-us"
 title = "Gaurav Arora"
 theme = "beautifulhugo"
 googleAnalytics = "UA-153642264"
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
 [[author]]
-  name = "Dean Attali"
-  email = "dean@attalitech.com"
-  facebook = "deanattali"
-  github = "daattali"
-  twitter = "daattali"
-  linkedin = "pub/dean-attali/8/946/143"
-  stackoverflow = "users/3943160/daattali"
-  calendly = "attalitech/meeting"
-
+  name = "Gaurav Arora"
+  email = "gauravarora.daiict@gmail.com"

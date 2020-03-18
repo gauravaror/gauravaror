@@ -20,4 +20,7 @@ If you reach a node with no further element then linked list doesn't have cycle 
 
 ## [Interesting Discussion](https://leetcode.com/discuss/career/216554/From-0-to-clearing-UberAppleAmazonLinkedIn)
 
+## https://leetcode.com/problems/split-array-with-same-average/
+
+## https://leetcode.com/problems/scramble-string/
 

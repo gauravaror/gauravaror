@@ -1,7 +1,7 @@
 ---
 title: "Attention"
 date: 2020-01-12T01:09:07+11:00
-draft: true
+draft: false
 ---
 
 Attention mechanism [1,2] improved NLP architectures by allowing them to focus on a relevant part of input/representation similar to how we humans do. While reading a text if the first and last character of a word is correct, humans can understand the text [3]. This post examines the inner working of additive and multiplicative attention, i.e. How attention mechanism converts query and hidden states into attention scores.
@@ -143,9 +143,138 @@ attended_state = attorch.bmm(attention_scores, values)
 
 ## Self-Attention (Vaswani)
 
+Self attention is a multiplicative (dot-product) attention, attention scores are obtained by multiplying query and key. We will look further into how query and key are transformed to generate the attention scores.
+
+Let's asssume our sentence is of length 10, our attention scores should look like [10X10] matrix which define how each word in dependent on all the other words in the sentence.
+
+<!-- ToDO: Add Image to show the attention of a sample sentence. -->
+
+Self-attention contains multiple heads and scaled dot-product attention. Below we briefly explain what does multiple head mean and why scaling is needed in attention.
+
+#### Multi-head attention.
+
+In a sentence there might be multiple dependencies between a word and other words. Normal scaled dot-product attention procedure is repeated multiple times which provides the modle to capture multiple types of dependencies between the words. A recent paper the story of heads [6] present evidence which shows different heads have different rols of semantic and syntactic roles. To make the model computationally efficient, they internal dimension is much smaller than input and output dimension of model and following dimension was used in the paper.
+
+$$
+	d_{head} = d_{key} = d_{value} = d_{query} = \frac{d_{model}}{num\\_heads}
+$$
+
+
+This is the reason using Transformer in pytorch with model dimension which isn't multiple of number of heads gives following assetion.
+
+```python3
+In [11]: torch.nn.TransformerEncoderLayer(d_model=128, nhead=9)                                                                                          
+AssertionError: embed_dim must be divisible by num_heads
+```
+
+#### Scaled dot-product
+
+Dot-product attention in the paper was scaled by \\(\frac{1}{\sqrt{d_{key}}}\\). Attention for a singl head is calculated using following equation: $$ softmax(\frac{Q.K^T}{\sqrt{d_{key}}})$$
+
+In the paper, they observed mlarger \\(d_{model}\\) values make the dot-product higher resulting in very small gradient which could be the reason for additive attention to perform better than multiplicative attention. 
+
+The Smaller gradient is attached to kind of probablity distribution softmax creates when the magnitude of input vector is higher. When the magnitude is higher softmax creates peaked distibution which results in most of the elements closer to zero hence resulting in smaller magnitude. The higher magnitude is result of higher variance coming from sum in dot-product attention.
+
+<!-- TODO: Write a post about high and low temperature and refer the blog post here. -->
+
+
+### Step by step multi-head self attention explaination
+
+#### Step 1: Use Embedding to generate Query, Key, Value from input
+
+In self-attention query and key both are same input value, where as query can be different from key as generally as it was in additive attention shown above. The Self-attention uses a linear projection to create query, key and value from input to the layer. We can either use the shared projection layer for key, query and value or different projection for each of them depending on parameter budget and need. Pytorch implementation defaults to shared projection layer.
+
+```python3
+# Import torch
+import torch
+
+# initalize model dimension and heads for transformers
+d_model = 1024
+num_heads = 8
+d_head = d_model//8
+
+batch_size = 128
+seq_len = 10
+inp = torch.randn(batch_size, seq_len, d_model)
+
+# Define the projection query, key and value.
+# Since internal dimension is each head is d_head
+# we should have `num_head` projection laters and then concatinate.
+# Defining it like this achieves similar results
+# and is computationally efficient and convinent.
+proj_query = torch.nn.Linear(d_model, d_model)
+proj_key = torch.nn.Linear(d_model, d_model)
+proj_value = torch.nn.Linear(d_model, d_model)
+
+# Do the actual projection to create query, value and key.
+Query = proj_query(inp)
+# Query dimension is torch.Size([128, 10, 1024]) == [batch_size, seq_len, inp]
+Key = proj_key(inp)
+Value = proj_value(inp)
+```
+
+#### Step 2: Rearrange tensors to accound for multiple heads.
+
+Following the creation of query, we need to account for multiple heads used by transformers attention. Query we created in last step contains input for all the heads as dim_head is \\(\frac{d_{model}}{num\\_heads}\\). We have to rearrange the tensor so that heads are broken from last dimension and move to dimension before seq_len so that parallel computation is performed for each of the head while doing matrix multiplication.
+
+```python3
+
+# Transform the heads out of last dimension and merge them to batch
+Query = Query.contiguous().view(seq_len, batch_size*num_heads, d_head)
+# Query dimension is [10, 128*8, 128] = [seq_len, batch_size*num_heads, d_head]
+Query = Query.transpose(0,1)
+# Query dimension now is [1024, 10, 128] == [batch_size*num_heads, seq_len, d_head]
+# This enables parallel processing of num_heads as those goes into batch dimension while
+# doing the tensor multiplication.
+
+# Similar transformation is done for Key and Vaue
+Key = Key.contiguous().view(seq_len, batch_size*num_heads, d_head)
+Key = Key.transpose(0,1)
+Value = Value.contiguous().view(seq_len, batch_size*num_heads, d_head)
+Value = Value.transpose(0,1)
+
+```
+
+#### Step 3: Generate scaled attention scores
+
+Generating attention scores corresponds to scoring how each word is depenedent on all the other words and output would look like a matrix of torch.Size([Seq_len, Seq_len]). We transpose Key from \\([Seq\\_lenXd\\_head]\\) to \\([d\\_headXSeq\\_len]\\). This is transposing the Key vector and helps us generate and capture the interaction between each word in query to each word with every other word. This is most important part and generates the attention score which after passing through softmax is referred to as self-attention.
+
+```python3
+Key = Key.transpose(1,2)
+# Dimension of Key now is [batch_size*num_heads, d_head, seq_len]
+
+softmax = torch.nn.Softmax(dim=-1)
+Raw_Attention = torch.bmm(Query, Key)
+attention_score = softmax(Raw_Attention)
+```
+
+#### Step 4: Preparing final output preperation from multi-head attention
+Multiplying attention score to value generates the raw output from each of the heads which passed through a linear output projection layer and rearranged to generate final output from multi-head self-attention module, output dimension is similar to input dimension.
+
+```python3
+
+# Generates the output value by multiplying attention scores to value
+raw_output = torch.bmm(attention_scores, Value)
+# raw_output dimensions are [1024, 10, 128] = [batch_size*num_heads, seq_len, d_head]
+
+# Define output projection layer which projects the output back to input dimension of layer
+output_proj = nn.Linear(d_model, d_model)
+
+# Rearrange the heads to be concatinated back
+raw_output = raw_output.contiguous().view(batch_size, seq_len, d_model)
+# raw_dimension dimension now is [128, 10, 1024]
+
+# Project the raw output which is output from the single multi-head attention module.
+output = output_proj(raw_output)
+
+```
+
+This conclude introduction to multiplication (dot product) attention.
+
 ## Reference
 * [1] Vaswani, Ashish, et al. "Attention is all you need." Advances in neural information processing systems. 2017.
 * [2] Bahdanau, Dzmitry, Kyunghyun Cho, and Yoshua Bengio. "Neural machine translation by jointly learning to align and translate." arXiv preprint arXiv:1409.0473 (2014).
 * [3] https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html
 * [4] https://www.foxnews.com/story/if-you-can-raed-tihs-you-msut-be-raelly-smrat
-
+* [5] [Annotated Attention] (https://nlp.seas.harvard.edu/2018/04/03/attention.html#attention)
+* [6] [The Story of Heads](https://lena-voita.github.io/posts/acl19\_heads.html)
