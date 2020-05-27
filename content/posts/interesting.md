@@ -43,3 +43,7 @@ Below is a running list of interesting articles/StackOverflow answers which seem
 ## Algorithms
 
 * Barnes-Hut is algorithm behind the faster implementations of t-SNE. Interesting idea. [abborjs Blog post](http://arborjs.org/docs/barnes-hut)
+
+
+## Shell
+* Introduction to parameter substitution: https://www.cyberciti.biz/tips/bash-shell-parameter-substitution-2.html:
