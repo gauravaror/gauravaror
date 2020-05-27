@@ -22,7 +22,7 @@ ps -ef | grep program
 Attach to the stuck process via gdb, when it is in a stuck state
 
 ```shell
-gdb -attach pid
+gdb --pid=PID
 ```
 
 #### Step 3
