@@ -1,8 +1,14 @@
 ---
 title: "Cpp concepts"
 date: 2020-04-30T11:10:25+10:00
-draft: true
+draft: false
 ---
+My attempt to explain some c++ concept after learning them. Currently, the following concepts are explained:
+
+- explicit
+- static
+
+<!--more-->
 
 explicit
 ========

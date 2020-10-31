@@ -1,9 +1,14 @@
 ---
-title: "Python_concepts"
+title: "Python Concepts"
 date: 2020-10-31T16:51:02+11:00
 draft: false
 ---
+My attempt to explain some python concept after learning them. Currently, the following concepts are explained:
 
+- Python dunder methods
+- Class variables
+
+<!--more-->
 # Python Concept: One day at a time #
 
 ## Python dunder methods ##
@@ -15,7 +20,7 @@ If you define a new class. When you try printing this class instance, python pri
 You can also implement `__add__` to define the behaviour how adding something to the object should work.
 
 
-## Class Objects
+## Class Variables
 
 A variable which is defined directly inside the class is called a class variable. You can access them via `self`.
 
