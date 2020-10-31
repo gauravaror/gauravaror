@@ -1,9 +1,11 @@
 ---
-title: "Segment_trees"
+title: "Segment Trees"
 date: 2020-10-31T17:04:43+11:00
 draft: false
 ---
 
+Segment tree is used for storing information about intervals. Its very useful when doing range queries. 
+<!--more-->
 # Segment Trees #
 
 ## Definition ##
