@@ -11,3 +11,14 @@ googleAnalytics = "UA-153642264"
 [[author]]
   name = "Gaurav Arora"
   email = "gauravarora.daiict@gmail.com"
+
+[[menu.main]]
+    name = "Blog"
+    weight = 130
+    url = "/"
+
+[[menu.main]]
+    name = "CV"
+    weight = 150
+    url = "/gaurav-cv.pdf"
+

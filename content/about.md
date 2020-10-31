@@ -16,6 +16,7 @@ Before joining Masters, I was a co-founder of a Mobile application startup focus
 
 #### News 
 
+* **Jun 5, 2020**  Presented my master's thesis: **An investigative study of catastrophic forgetting in NLP** [Slides](/thesis_presentation.pdf)
 * **Dec 2, 2019**  Giving a [talk](https://www.meetup.com/Sydney-Natural-Language-Processing-Meetup/events/266866710/) at Sydney NLP Meetup titled **An Empirical study on Catastrophic Forgetting in NLP** on Dec 4th, 2019.
 * **Oct 22, 2019**  Paper accepted at [ALTA 2019](https://alta2019.alta.asn.au/papers)
 * **Jul 23, 2018**  Started MS (CS) at [The University of Melbourne](https://www.unimelb.edu.au/) with Prof. [Timothy Baldwin](https://people.eng.unimelb.edu.au/tbaldwin/) and [Afshin Rahimi](http://afshinrahimi.github.io/).
