@@ -7,7 +7,10 @@ draft: false
 Below is a running list of interesting articles/StackOverflow answers which seems worth sharing and referring back.
 <!--more-->
 
+## Python
 
+* [Pythonic Perambulations](http://jakevdp.github.io/)  - Really interesting blog posts covering internals of python
+* [Arpit Bhayani](https://arpitbhayani.me/) Interesting blog covering the CS fundmentals and python
 
 ## C++
 
