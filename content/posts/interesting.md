@@ -16,7 +16,7 @@ Below is a running list of interesting articles/StackOverflow answers which seem
 
 * Effecient Way to return String : [Stackoverflow answer](https://stackoverflow.com/questions/26587110/returning-an-empty-string-efficient-way-in-c)
 * How to debug your c++ program : [My blog post]({{< ref "/posts/first.md" >}})
-
+* All about c++ const mess : [Duramecho's Miscellany Blog Post](http://duramecho.com/ComputerInformation/WhyHowCppConst.html)
 
 ## Machine Learning
 
