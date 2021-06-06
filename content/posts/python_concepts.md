@@ -44,3 +44,13 @@ Adding `spacy` to `anlp` instance added `spacy` for `bnlp` instance as well. Thi
 Just wondering this could be a desirable behaviour as well. In this case, because this could enable sharing knowledge of available tools across different instances. In all, mutable objects as class variables should be used with caution.
 
 Detailed description: [Python tutorial on Classes](https://docs.python.org/3/tutorial/classes.html)
+
+## Context Managers: *with* statement
+
+This allow us to write enter and teardown code. It is really helpful to avoid writing explicit try/except blocks and also managing automatic closure of resources.
+
+We need to implement __entry__ and __exit functions. More details about it [here](https://realpython.com/python-with-statement/)
+
+### Timing your functions using Timer and with statements
+
+It is possible to time various part of your system using Timer as a context manager, detailed description of it is in [this post](https://realpython.com/python-timer/)
