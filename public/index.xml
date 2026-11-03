@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Gaurav Arora</title>
+		<link>https://gauravaror.github.io/</link>
+		<description>Recent content on Gaurav Arora</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 07 Jun 2021 01:35:37 +1000</lastBuildDate>
+		
+			<atom:link href="https://gauravaror.github.io/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Working Logs</title>
+				<link>https://gauravaror.github.io/posts/daily_note/</link>
+				<pubDate>Mon, 07 Jun 2021 01:35:37 +1000</pubDate>
+				<guid>https://gauravaror.github.io/posts/daily_note/</guid>
+				<description>&lt;p&gt;Log of things I played with.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Segment Trees</title>
+				<link>https://gauravaror.github.io/posts/segment_trees/</link>
+				<pubDate>Sat, 31 Oct 2020 17:04:43 +1100</pubDate>
+				<guid>https://gauravaror.github.io/posts/segment_trees/</guid>
+				<description>&lt;p&gt;Segment tree is used for storing information about intervals. Its very useful when doing range queries.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Python Concepts</title>
+				<link>https://gauravaror.github.io/posts/python_concepts/</link>
+				<pubDate>Sat, 31 Oct 2020 16:51:02 +1100</pubDate>
+				<guid>https://gauravaror.github.io/posts/python_concepts/</guid>
+				<description>&lt;p&gt;My attempt to explain some python concept after learning them. Currently, the following concepts are explained:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python dunder methods&lt;/li&gt;&#xA;&lt;li&gt;Class variables&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+			<item>
+				<title>Cpp concepts</title>
+				<link>https://gauravaror.github.io/posts/cpp_concepts/</link>
+				<pubDate>Thu, 30 Apr 2020 11:10:25 +1000</pubDate>
+				<guid>https://gauravaror.github.io/posts/cpp_concepts/</guid>
+				<description>&lt;p&gt;My attempt to explain some c++ concept after learning them. Currently, the following concepts are explained:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;explicit&lt;/li&gt;&#xA;&lt;li&gt;static&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+			<item>
+				<title>Problems</title>
+				<link>https://gauravaror.github.io/problems/</link>
+				<pubDate>Sat, 18 Jan 2020 18:11:03 +1100</pubDate>
+				<guid>https://gauravaror.github.io/problems/</guid>
+				<description>&lt;h2 id=&#34;trapping-rain-water&#34;&gt;&lt;a href=&#34;https://leetcode.com/problems/trapping-rain-water/&#34;&gt;Trapping Rain Water&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;kth-largest-element-in-an-array&#34;&gt;&lt;a href=&#34;https://leetcode.com/problems/kth-largest-element-in-an-array/&#34;&gt;Kth Largest element in an array&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;linked-list-cycle&#34;&gt;&lt;a href=&#34;https://leetcode.com/problems/linked-list-cycle/&#34;&gt;Linked List Cycle&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/linked_list_cycle.py&#34;&gt;Solution&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;There are two type of solution for identifying Linked List cycle.&#xA;First solution is to maintain the hash table of element seen till now and if you see an element again then you know linked list have cycles but this required O(n) space.&lt;/p&gt;&#xA;&lt;p&gt;Better solution is to keep two pointers one fast and one slow. Fast pointer moves two element at a list and slow moves one element at a time.&#xA;If you reach a node with no further element then linked list doesn&amp;rsquo;t have cycle but if fast and slow runner both reach a same element then they have cycles.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Educative patterns</title>
+				<link>https://gauravaror.github.io/educative_patterns/</link>
+				<pubDate>Fri, 17 Jan 2020 20:18:52 +1100</pubDate>
+				<guid>https://gauravaror.github.io/educative_patterns/</guid>
+				<description>&lt;p&gt;Maintaining list Inspired from list maintained by &lt;a href=&#34;https://sadihassan.github.io/leetlist/educative_pattern.html&#34;&gt;sadihassan&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;pattern--sliding-window-07&#34;&gt;Pattern : Sliding Window (07)&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;&#x9;&lt;thead&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Title&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Link&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Code&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Notes&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/thead&gt;&#xA;&#x9;&lt;tbody&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Fruits into baskets (medium)&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://leetcode.com/problems/fruit-into-baskets/&#34;&gt;Leet&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/fruit_in_basket.py&#34;&gt;github&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Sliding window, check at end of if condition&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;pattern--two-pointers&#34;&gt;Pattern : Two pointers&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;&#x9;&lt;thead&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Title&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Link&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Code&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Notes&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/thead&gt;&#xA;&#x9;&lt;tbody&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Pair with Target Sum (easy)&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://leetcode.com/problems/two-sum/&#34;&gt;Leet&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/two_sums.py&#34;&gt;github&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;hashing solution and two pointers&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;pattern--fast-and-slow-pointers&#34;&gt;Pattern : Fast and Slow pointers:&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;&#x9;&lt;thead&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Title&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Link&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Code&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Notes&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/thead&gt;&#xA;&#x9;&lt;tbody&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Linked list Cycle&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://leetcode.com/problems/linked-list-cycle/&#34;&gt;Leet&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/linked_list_cycle.py&#34;&gt;github&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Fast and slow pointer and hash tables&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Start of Linked list Cycle&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://leetcode.com/problems/linked-list-cycle-ii/&#34;&gt;Leet&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/linked_list_cycle_entry_point.py&#34;&gt;github&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Fast and slow point approach and also hash based works works. Pointer approach also does entry to meeting point traversal after meeting point&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Happy Number&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://leetcode.com/problems/happy-number/&#34;&gt;Leet&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/happy_number.py&#34;&gt;github&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Fast and slow point approach and also hash based works works.&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Middle of the Linked List&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://leetcode.com/problems/middle-of-the-linked-list/&#34;&gt;Leet&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/middle_of_linked_list.py&#34;&gt;github&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Fast and slow point approach.&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;pattern-merge-intervals&#34;&gt;Pattern: Merge Intervals&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;&#x9;&lt;thead&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Title&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Link&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Code&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Notes&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/thead&gt;&#xA;&#x9;&lt;tbody&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Merge Intervals&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://leetcode.com/problems/merge-intervals/&#34;&gt;Leet&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/merge_intervals.py&#34;&gt;github&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Sort the intervals and linear&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;pattern-in-place-reversal-of-linked-list&#34;&gt;Pattern: In-Place reversal of Linked List&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;&#x9;&lt;thead&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Title&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Link&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Code&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Notes&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/thead&gt;&#xA;&#x9;&lt;tbody&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Reverse a Linked List (in-place)&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://leetcode.com/problems/reverse-linked-list/&#34;&gt;Leet&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/reverse_linked_list.py&#34;&gt;github&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Save the current element before moving on to the next element&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Reverse a sublist in Linked List&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://leetcode.com/problems/reverse-linked-list-ii/&#34;&gt;Leet&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/linked_list_reverse_2.py&#34;&gt;github&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Store the first and then adjust the list&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;pattern-tree-breadth-first-search&#34;&gt;Pattern: Tree Breadth First Search&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;&#x9;&lt;thead&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Title&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Link&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Code&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Notes&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/thead&gt;&#xA;&#x9;&lt;tbody&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Level Order traversal of Binary Tree&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://leetcode.com/problems/binary-tree-level-order-traversal/&#34;&gt;Leet&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/binary-tree-level-order-traversal.py&#34;&gt;github&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Binary Tree Level order Traversal use the BFS and maintain level&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Level Order traversal of Binary Tree  reverse&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://leetcode.com/problems/binary-tree-level-order-traversal-ii/&#34;&gt;Leet&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/binary-tree-level-order-traversal_2.py&#34;&gt;github&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Binary Tree Level order Traversal use the BFS and maintain level Just reverse the list from last question&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;pattern-tree-depth-first-search&#34;&gt;Pattern: Tree Depth First Search&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;&#x9;&lt;thead&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Title&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Link&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Code&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Notes&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/thead&gt;&#xA;&#x9;&lt;tbody&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Path Sum&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://leetcode.com/problems/path-sum/&#34;&gt;Leet&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/path-sum.py&#34;&gt;github&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Path Sum using dfs and if leaf matches the sum exit else continue&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Path Sum return all path&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://leetcode.com/problems/path-sum-ii/&#34;&gt;Leet&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/path-sum-ii.py&#34;&gt;github&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Path Sum using dfs and if leaf matches the sum exit else continue Same as above just pass lis of all nodes val till root and append in answer&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;pattern-two-heaps&#34;&gt;Pattern: Two Heaps&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;&#x9;&lt;thead&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Title&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Link&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Code&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Notes&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/thead&gt;&#xA;&#x9;&lt;tbody&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Find the Median of a Number Stream (hard)&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://leetcode.com/problems/find-median-from-data-stream/&#34;&gt;Leet&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/find_median_sort_two_heap.cpp&#34;&gt;github&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Maintain a min and max heap and take top elements based on sizes of heap and keep them balanced.&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Sliding Window Median (hard) [Not Finished]&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://leetcode.com/problems/sliding-window-median/&#34;&gt;Leet&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/sliding-window-median-failed.cpp&#34;&gt;github&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Maintain a min and max heap and take top elements based on sizes of heap and keep them balanced.&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Mazimize Capital (hard)&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://leetcode.com/problems/ipo/&#34;&gt;Leet&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://github.com/gauravaror/programming/blob/master/ipo.cpp&#34;&gt;github&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Maintain max heap for profit and min heap for capital not matching and add all capital.&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h1 id=&#34;non-educative-pattern-questions&#34;&gt;Non-Educative pattern Questions&lt;/h1&gt;&#xA;&lt;h2 id=&#34;patter-dynamic-programming&#34;&gt;Patter: Dynamic Programming&lt;/h2&gt;&#xA;&lt;p&gt;Dynamic programming is all about saving the computation by saving the old computation. This is enabled by maintaining a table to save the previous computation and generally results in a faster algoritm.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Attention</title>
+				<link>https://gauravaror.github.io/posts/attention/</link>
+				<pubDate>Sun, 12 Jan 2020 01:09:07 +1100</pubDate>
+				<guid>https://gauravaror.github.io/posts/attention/</guid>
+				<description>&lt;p&gt;Attention mechanism [1,2] improved NLP architectures by allowing them to focus on a relevant part of input/representation similar to how we humans do. While reading a text if the first and last character of a word is correct, humans can understand the text [3]. This post examines the inner working of additive and multiplicative attention, i.e. How attention mechanism converts query and hidden states into attention scores.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Gradient estimation for hard non-linearities</title>
+				<link>https://gauravaror.github.io/posts/straight_through_estimator/</link>
+				<pubDate>Fri, 27 Dec 2019 01:12:48 +1100</pubDate>
+				<guid>https://gauravaror.github.io/posts/straight_through_estimator/</guid>
+				<description>&lt;p&gt;The hard non-linearities such as step functions are useful for modelling a categorical variable in neural networks. The gradient is zero everywhere for hard activations, which leads to difficulty in training using backpropagation. We review some technique proposed to estimate gradient such as straight through estimator.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Memory networks</title>
+				<link>https://gauravaror.github.io/posts/memory_networks/</link>
+				<pubDate>Wed, 11 Dec 2019 19:41:03 +1100</pubDate>
+				<guid>https://gauravaror.github.io/posts/memory_networks/</guid>
+				<description>&lt;p&gt;&lt;code&gt;Memory Networks&lt;/code&gt; are neural networks which have access to explicit storage and a mechanism to access storage to answer query requiring multi-hop reasoning.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://gauravaror.github.io/Big_Oak.png&#34; width=&#34;40%&#34;&gt;&#xA;&lt;/figure&gt;</description>
+			</item>
+			<item>
+				<title>Running list of interesting links</title>
+				<link>https://gauravaror.github.io/posts/interesting/</link>
+				<pubDate>Mon, 09 Dec 2019 10:39:07 +1100</pubDate>
+				<guid>https://gauravaror.github.io/posts/interesting/</guid>
+				<description>&lt;p&gt;Below is a running list of interesting articles/StackOverflow answers which seems worth sharing and referring back.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>WIP:A short tour of libpst</title>
+				<link>https://gauravaror.github.io/posts/libpst/</link>
+				<pubDate>Thu, 28 Nov 2019 17:45:50 +1100</pubDate>
+				<guid>https://gauravaror.github.io/posts/libpst/</guid>
+				<description>&lt;p&gt;The &lt;code&gt;libpst&lt;/code&gt; is a library to extract text from microsoft properitery format &lt;code&gt;.pst&lt;/code&gt;, which is used to storing emails, attachments. There isn&amp;rsquo;t a good documentation for &lt;code&gt;libpst&lt;/code&gt;.&#xA;This is a simple tour writing a &lt;code&gt;c++&lt;/code&gt; program from scratch to extract an email and it&amp;rsquo;s attachment from &lt;code&gt;.pst&lt;/code&gt; file using &lt;code&gt;libpst&lt;/code&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Linear to Quadratic and back</title>
+				<link>https://gauravaror.github.io/posts/linear_quadratic/</link>
+				<pubDate>Mon, 18 Nov 2019 21:37:37 +1100</pubDate>
+				<guid>https://gauravaror.github.io/posts/linear_quadratic/</guid>
+				<description>&lt;p&gt;Can a single for loop be running with quadratic time complexity?&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Xapian</title>
+				<link>https://gauravaror.github.io/xapian/</link>
+				<pubDate>Mon, 18 Nov 2019 16:14:09 +1100</pubDate>
+				<guid>https://gauravaror.github.io/xapian/</guid>
+				<description>&lt;p&gt;I offer commercial development support for Xapian since 2014. I have developed the following capabilities in Xapian commercially:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Decoupled indexing and text extraction, which drastically reducing indexing time.&lt;/li&gt;&#xA;&lt;li&gt;Enabled indexing of images using tesseract.&lt;/li&gt;&#xA;&lt;li&gt;I have designed and implemented a heuristic algorithm to &lt;a href=&#34;https://github.com/gauravaror/TableExtrac&#34;&gt;extract table&lt;/a&gt; from images.&lt;/li&gt;&#xA;&lt;li&gt;I have implemented the &lt;a href=&#34;https://github.com/xapian/xapian/blob/1c3d424b5e7f2350235a13a7b120f380ccf05567/xapian-core/include/xapian/weight.h#L1505&#34;&gt;Language Modelling based ranking scheme&lt;/a&gt; in Xapian (GSOC).&lt;/li&gt;&#xA;&lt;li&gt;I have developed an &lt;a href=&#34;https://github.com/xapian/xapian-evaluation&#34;&gt;evaluation framework&lt;/a&gt; for Xapian.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+			<item>
+				<title>About</title>
+				<link>https://gauravaror.github.io/about/</link>
+				<pubDate>Mon, 18 Nov 2019 13:15:04 +1100</pubDate>
+				<guid>https://gauravaror.github.io/about/</guid>
+				<description>&lt;p&gt;Hi! I am Gaurav Arora.&#xA;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;I am pursuing a Masters of Science (Computer Science) under the supervision of Prof. &lt;!-- raw HTML omitted --&gt;Timothy Baldwin&lt;!-- raw HTML omitted --&gt;. My master&amp;rsquo;s research project focuses on Catastrophic Forgetting in Neural Networks. Our empirical study comparing different architecture like CNN, and LSTM for forgetting was accepted in ALTA 2019.&lt;/p&gt;&#xA;&lt;p&gt;I have been offering consultancy services for &lt;!-- raw HTML omitted --&gt;Xapian&lt;!-- raw HTML omitted --&gt; from 2014. Please find a list of my Xapian related projects &lt;a href=&#34;https://gauravaror.github.io/xapian/&#34;&gt;here&lt;/a&gt;. I was a Google Summer of Code Intern with Xapian in 2012. I wrote journal during GSOC &lt;a href=&#34;http://gsocxapian.blogspot.com/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>gdb Demystified</title>
+				<link>https://gauravaror.github.io/posts/first/</link>
+				<pubDate>Sun, 29 Sep 2019 16:29:48 +1000</pubDate>
+				<guid>https://gauravaror.github.io/posts/first/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;gdb&lt;/strong&gt; is one of the useful commands to debug what&amp;rsquo;s going wrong with your program.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
